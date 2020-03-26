@@ -62,6 +62,11 @@ variable "rds_instance" {
   description = "The size of RDS instance, eg db.t2.micro"
 }
 
+variable "allocated_storage" {
+  description = "The storage size of the RDS instance in gigabytes"
+  default     = "25"
+}
+
 variable "az_count" {
   description = "How many AZ's to create in the VPC"
   default     = 2

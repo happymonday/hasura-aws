@@ -51,6 +51,7 @@ module "hasura" {
   rds_password              = "YOUR DATABASE PASSWORD"
   multi_az                  = "ENABLE MULTIPLE AVAILABILITY ZONES"
   az_count                  = "NUMBER OF AVAILABILITY ZONES"
+  allocated_storage         = "ALLOCATED STORAGE OF RDS INSTANCE"
   vpc_enable_dns_hostnames  = "ENABLE DNS HOSTNAMES"
   environment               = "ENV VARS FOR ECS TASK"
 }
