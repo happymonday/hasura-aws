@@ -177,7 +177,7 @@ resource "aws_db_subnet_group" "hasura" {
 
 resource "aws_db_instance" "hasura" {
   name                   = var.rds_db_name
-  identifier             = "hasura"
+  identifier             = var.rds_identifier
   username               = var.rds_username
   password               = var.rds_password
   port                   = "5432"
