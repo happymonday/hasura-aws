@@ -46,6 +46,11 @@ variable "hasura_console_enabled" {
   default     = "true"
 }
 
+variable "rds_identifier" {
+  description = "The identifier for RDS"
+  default     = "hasura"
+}
+
 variable "rds_username" {
   description = "The username for RDS"
 }
