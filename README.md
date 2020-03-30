@@ -49,6 +49,7 @@ module "hasura" {
   rds_instance              = "YOUR DATABASE INSTANCE SIZE"
   rds_username              = "YOUR DATABASE USERNAME"
   rds_password              = "YOUR DATABASE PASSWORD"
+  rds_identifier            = "YOUR DATABASE IDENTIFIER"
   multi_az                  = "ENABLE MULTIPLE AVAILABILITY ZONES"
   az_count                  = "NUMBER OF AVAILABILITY ZONES"
   allocated_storage         = "ALLOCATED STORAGE OF RDS INSTANCE"
