@@ -13,3 +13,7 @@ output "public_subnets" {
 output "ecs_security_group" {
   value = aws_security_group.hasura_ecs
 }
+
+output "hasura_rds_endpoint" {
+  value = aws_db_instance.hasura.endpoint
+}
