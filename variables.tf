@@ -72,6 +72,11 @@ variable "allocated_storage" {
   default     = "25"
 }
 
+variable "max_allocated_storage" {
+  description = "The maximum storage size of the RDS instance in gigabytes"
+  default     = "25"
+}
+
 variable "az_count" {
   description = "How many AZ's to create in the VPC"
   default     = 2

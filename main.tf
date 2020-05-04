@@ -185,6 +185,7 @@ resource "aws_db_instance" "hasura" {
   engine_version         = "10.5"
   instance_class         = var.rds_instance
   allocated_storage      = var.allocated_storage
+  max_allocated_storage  = var.max_allocated_storage
   storage_encrypted      = false
   vpc_security_group_ids = [aws_security_group.hasura_rds.id]
   db_subnet_group_name   = aws_db_subnet_group.hasura.name
