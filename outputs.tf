@@ -17,3 +17,7 @@ output "ecs_security_group" {
 output "hasura_rds_endpoint" {
   value = aws_db_instance.hasura.endpoint
 }
+
+output "hasura_vpc_id" {
+  value = aws_vpc.hasura.id
+}
