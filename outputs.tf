@@ -2,6 +2,10 @@ output "vpc" {
   value = aws_vpc.hasura
 }
 
+output "igw" {
+  value = aws_internet_gateway.hasura
+}
+
 output "private_subnets" {
   value = aws_subnet.hasura_private
 }
